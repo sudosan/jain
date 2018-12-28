@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JAIN</title>
+  <link rel='stylesheet' href='stylesheets/style.css'>
+</head>
+<body>
+  <h1>JAIN</h1>
+  <div id="chat"></div>
+  <div id="form">
+    <div id="imageinput" class="uploadinput">
+      <p>画像挿入</p>
+      <input id="imagefileForm" type="file" accept="image/*">
+      <button id="imagesubmit">挿入</button>
+    </div>
+    <div class="uploadinput">
+      <p>画像以外のファイルは<a href="https://transfer.sh/" target="_blank">transfer.sh</a>を使うと便利です</p>
+    </div>
+    <div id="textinput">
+      <input id="textform" type="text" name="textBox">
+      <button id="submit">送信</button>
+    </div>
+  </div>
+  <div id="login">
+    <div class="login_form">
+      <h2>アイコンを選択してください</h2>
+      <input id="fileForm" type="file" accept="image/*">
+      <button id="join">参加！</button>
+    </div>
+  </div>
+  <script src="javascripts/socket.io.js"></script>
+  <script src="javascripts/main.js"></script>
+</body>
+</html>
